@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="indicator_width">25dp</dimen>
+	<dimen name="indicator_height">10dp</dimen>
+	<dimen name="radius_available">10dp</dimen>
+	<dimen name="tabs_height">60dp</dimen>
+</resources>

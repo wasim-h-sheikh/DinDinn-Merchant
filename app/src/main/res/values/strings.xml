@@ -1,0 +1,10 @@
+<resources>
+	<string name="app_name">DinDinn Merchant</string>
+	<string name="auto_reject">Auto Reject</string>
+	<string name="at">at</string>
+	<string name="accept">Accept</string>
+	<string name="incoming">Incoming</string>
+	<string name="expired">Expired</string>
+	<string name="available">Available</string>
+	<string name="hint_search">Search for an item</string>
+</resources>

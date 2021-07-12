@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/color_card_background"
+	tools:context=".ui.orders.OrderFragment">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<include
+			android:id="@+id/customToolbar"
+			layout="@layout/custom_toolbar" />
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerview"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_toStartOf="@+id/imageViewShowMore"
+				android:background="@color/color_card_background"
+				tools:listitem="@layout/item_order" />
+			<ImageView
+				android:id="@+id/imageViewShowMore"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:scaleType="fitEnd"
+				android:src="@drawable/image_show_more" />
+
+		</RelativeLayout>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/tvError"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center" />
+
+	<ProgressBar
+		android:id="@+id/progressBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|center_vertical" />
+</FrameLayout>

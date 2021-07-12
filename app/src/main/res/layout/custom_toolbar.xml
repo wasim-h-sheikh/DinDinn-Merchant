@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:orientation="horizontal">
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginStart="100dp"
+		android:orientation="vertical">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/color_red"
+			android:paddingStart="12dp"
+			android:paddingEnd="12dp"
+			android:textColor="@color/white"
+			android:textSize="12sp"
+			android:layout_gravity="end"
+			android:layout_marginEnd="12dp"
+			android:text="+2"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/rounded_rect_silver"
+			android:paddingStart="12dp"
+			android:paddingEnd="12dp"
+			android:padding="4dp"
+			android:textColor="@color/color_text_primary"
+			android:textSize="15sp"
+			android:textStyle="bold"
+			android:text="@string/incoming"/>
+	</LinearLayout>
+	<ImageView
+		android:id="@+id/imageViewManage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_toStartOf="@+id/textViewTitle"
+		android:src="@drawable/ic_manage"/>
+	<TextView
+		android:id="@+id/textViewTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:textSize="20sp"
+		android:maxLength="25"
+		android:layout_marginStart="8dp"
+		android:textColor="@color/color_text_primary"
+		android:layout_toStartOf="@+id/imageViewMore"
+		android:text="MCC Makan Palace - ..."/>
+<ImageView
+	android:id="@+id/imageViewMore"
+	android:layout_width="30dp"
+	android:layout_height="30dp"
+	android:layout_alignParentEnd="true"
+	android:layout_centerVertical="true"
+	android:src="@drawable/ic_more_vert"/>
+</RelativeLayout>
